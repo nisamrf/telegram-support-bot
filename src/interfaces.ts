@@ -25,6 +25,7 @@ interface Autoreply {
 
 interface Language {
   startCommandText: string;
+  faquserCommandText: string;
   faqCommandText: string;
   helpCommandText: string;
   confirmationMessage: string;
