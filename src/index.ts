@@ -98,6 +98,11 @@ function main(bot: TelegramAddon = defaultBot, logs = true) {
       parse_mode: cache.config.parse_mode,
     }),
   );
+  bot.command('faquser', (ctx: Context) =>
+    middleware.reply(ctx, cache.config.language.faquserCommandText, {
+      parse_mode: cache.config.parse_mode,
+    }),
+  );
   bot.command('help', (ctx: Context) => commands.helpCommand(ctx));
   bot.command('links', (ctx: Context) => {
     let links = '';
