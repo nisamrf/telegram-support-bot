@@ -1,4 +1,3 @@
-test
 import { Context, Config } from './interfaces';
 import cache from './cache';
 
